@@ -21,7 +21,7 @@ fish_image = py.transform.rotate(fish_image, 180 - rotation)
 def fish_move():
   global fish_image
   fish_rect.move_ip(speed)
-  scren_info = py.display.Info()
+  screen_info = py.display.Info()
   if fish_rect.right > screen_info.current_w or fish_rect.left < 0:
     speed[0] *= -1
     fish_image = py.transform.flip(fish_image, True, False)
